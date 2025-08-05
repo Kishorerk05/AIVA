@@ -1,64 +1,60 @@
-# 🤖 Reena Insurance Chatbot
-
+🤖 AIVA Insurance Chatbot
 A beautiful, modern insurance assistant chatbot with a glass-morphism UI design.
 
-## ✨ Features
+✨ Features
+Beautiful Glass UI: Modern glass-morphism design with smooth animations
 
-- **Beautiful Glass UI**: Modern glass-morphism design with smooth animations
-- **Insurance Expert**: Powered by AI to provide insurance advice and information
-- **Real-time Chat**: Instant responses with typing indicators
-- **Responsive Design**: Works on desktop and mobile devices
-- **Theme Toggle**: Switch between dark and light themes
-- **User Authentication**: Simple username-based login system
+Insurance Expert: Powered by AI to provide insurance advice and information
 
-## 🚀 Quick Start
+Real-time Chat: Instant responses with typing indicators
 
-### Option 1: Using the Startup Script (Recommended)
+Responsive Design: Works on desktop and mobile devices
 
-1. **Navigate to the project directory:**
-   ```bash
-   cd reena_chatbot
-   ```
+Theme Toggle: Switch between dark and light themes
 
-2. **Run the startup script:**
-   ```bash
-   python start_app.py
-   ```
+User Authentication: Simple username-based login system
 
-3. **Open your browser and go to:**
-   ```
-   http://localhost:5000
-   ```
+🚀 Quick Start
+Option 1: Using the Startup Script (Recommended)
+Navigate to the project directory:
 
-### Option 2: Manual Setup
+bash
+cd aiva_chatbot
+Run the startup script:
 
-1. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+bash
+python start_app.py
+Open your browser and go to:
 
-2. **Start the server:**
-   ```bash
-   python run.py
-   ```
+text
+http://localhost:5000
+Option 2: Manual Setup
+Install dependencies:
 
-3. **Open your browser and go to:**
-   ```
-   http://localhost:5000
-   ```
+bash
+pip install -r requirements.txt
+Start the server:
 
-## 🎯 How to Use
+bash
+python run.py
+Open your browser and go to:
 
-1. **Login**: Enter any username to start chatting
-2. **Chat**: Type your insurance-related questions
-3. **Get Advice**: Reena will provide expert insurance guidance
-4. **Theme**: Click the AI avatar to access theme settings
-5. **Logout**: Use the logout option in the profile menu
+text
+http://localhost:5000
+🎯 How to Use
+Login: Enter any username to start chatting
 
-## 🏗️ Project Structure
+Chat: Type your insurance-related questions
 
-```
-reena_chatbot/
+Get Advice: AIVA will provide expert insurance guidance
+
+Theme: Click the AI avatar to access theme settings
+
+Logout: Use the logout option in the profile menu
+
+🏗️ Project Structure
+text
+aiva_chatbot/
 ├── app/
 │   ├── __init__.py
 │   ├── chatbot.py      # AI chatbot logic
@@ -69,58 +65,84 @@ reena_chatbot/
 ├── run.py              # Flask server entry point
 ├── start_app.py        # Automated startup script
 ├── requirements.txt    # Python dependencies
-└── README.md          # This file
-```
-
-## 🔧 Configuration
-
+└── README.md           # This file
+🔧 Configuration
 The chatbot uses Groq LLM for responses. You need to set up your API key before using the chatbot.
 
-### Quick Setup
+Quick Setup
+Get a Groq API Key: Sign up at https://console.groq.com/
 
-1. **Get a Groq API Key**: Sign up at [https://console.groq.com/](https://console.groq.com/)
-2. **Create a `.env` file** in the project root with:
-   ```
-   GROQ_API_KEY=gsk_your_actual_api_key_here
-   ```
-3. **Test the connection**: Visit `http://localhost:5000/test` after starting the server
+Create a .env file in the project root with:
 
-For detailed setup instructions, see [SETUP.md](SETUP.md).
+text
+GROQ_API_KEY=gsk_your_actual_api_key_here
+Test the connection: Visit http://localhost:5000/test after starting the server
 
-## 🎨 UI Features
+For detailed setup instructions, see SETUP.md.
 
-- **Glass Morphism**: Modern translucent design
-- **Floating Elements**: Animated background particles
-- **Cursor Trail**: Interactive mouse trail effect
-- **Smooth Animations**: Message slide-in effects
-- **Responsive Layout**: Adapts to different screen sizes
+🎨 UI Features
+Glass Morphism: Modern translucent design
 
-## 🛠️ Development
+Floating Elements: Animated background particles
 
+Cursor Trail: Interactive mouse trail effect
+
+Smooth Animations: Message slide-in effects
+
+Responsive Layout: Adapts to different screen sizes
+
+🛠️ Development
 To modify the chatbot:
 
-1. **Backend Logic**: Edit `app/chatbot.py`
-2. **API Routes**: Modify `app/routes.py`
-3. **UI Design**: Update `UI/index.html`
-4. **Styling**: Modify CSS in the HTML file
+Backend Logic: Edit app/chatbot.py
 
-## 📱 Browser Compatibility
+API Routes: Modify app/routes.py
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
+UI Design: Update UI/index.html
 
-## 🚨 Troubleshooting
+Styling: Modify CSS in the HTML file
 
-- **Port 5000 in use**: Change the port in `run.py`
-- **API errors**: Check your Groq API key configuration
-- **UI not loading**: Ensure all files are in the correct directories
+📱 Browser Compatibility
+Chrome (recommended)
 
-## 📄 License
+Firefox
 
+Safari
+
+Edge
+
+🚨 Troubleshooting
+Port 5000 in use: Change the port in run.py
+
+API errors: Check your Groq API key configuration
+
+UI not loading: Ensure all files are in the correct directories
+
+📄 License
 This project is for educational and demonstration purposes.
 
----
+Enjoy chatting with AIVA! 🤖💬
 
-**Enjoy chatting with Reena! 🤖💬**
+🗃️ Libraries Used
+Web Frameworks
+flask: Web framework for Python
+
+flask-cors: Adds Cross-Origin Resource Sharing (CORS) support to Flask applications
+
+fastapi: Modern and fast web framework for building APIs
+
+uvicorn[standard]: ASGI server for running FastAPI applications
+
+AI/ML Libraries
+langchain: Framework for developing applications with language models
+
+langchain-groq: Groq integration for LangChain
+
+Utility Libraries
+python-dotenv: Load environment variables from .env files
+
+markdown: Python implementation of Markdown for rendering markdown text
+
+email-validator: Email validation library
+
+sendgrid: Email delivery service integration
